@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      height: 100vh;
+      background-image: url('https://t4.ftcdn.net/jpg/03/08/69/75/360_F_308697506_9dsBYHXm9FwuW0qcEqimAEXUvzTwfzwe.jpg');
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color:white;
+    }
+
+    
+
+    .navbar {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .navbar h1 {
+      font-size: 50px;
+      text-align: center;
+    }
+
+    
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: right;
+      gap: 50px;
+      padding: 0;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #ffcc00;
+    }
+
+    section {
+      padding: 100px 20px;
+      min-height: 100vh;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 28px;
+    }
+
+.carousel-inner {
+  height: 1700px; 
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color: coral;}
+</style>
+</head>
+<body>
+  <!-- Bootstrap Bundle JS (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <div class="overlay">
+    <div class="navbar">
+      <h1>MEERA MOHANAN</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am an enthusiastic person with a background in BSc Computer Science and currently pursuing MCA. Passionate about software development, design, and innovation.I am now actively seeking opportunities to begin my carrer in the IT industry.Eager to apply the knowledge and skills i have gained through my academic journey,I am ready to contribute effectively to a proffessional environment,continuously learn and grow within the technology sector.</p>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <h5>My Certificates</h5>
+      <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/nptel.jpg" alt="nptel" class="d-block">
+      <div class="carousel-caption">
+        <h3>NPTEL</h3>
+        <!-- <p>An 8-week certificate course on design and engineering system</p> -->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/presentation.jpg" alt="paper presentation" class="d-block">
+      <div class="carousel-caption">
+        <h3>presentation</h3>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="images/publication.jpeg" alt="publication" class="d-block">
+      <div class="carousel-caption">
+        <h3>publication</h3>
+      </div>  
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="container-fluid mt-3">
+</div>
+
+</section>
+
+
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>connect me on...</p><br>
+  <table>
+  <tr>
+    <td>Email id</td>
+    <td>meeramohanan2003@gmail.com</td>
+  </tr>
+  <tr>
+    <td>Linkedin</td>
+    <td>www.linkedin.com/in/meera-mohanan-0a222b270</td>
+  </tr>
+  <tr>
+    <td>Phone</td>
+    <td>9746666822</td>
+  </tr>
+</table>
+</section>
+  
+</div>
+</body>
+</html>
